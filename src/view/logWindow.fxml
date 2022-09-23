@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logInForm" prefHeight="50.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.logWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="74.0" layoutX="7.0" layoutY="10.0" stroke="BLACK" strokeType="INSIDE" width="811.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#000046" />
+                  <Stop color="#1cb5e0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="23.0" layoutY="18.0" prefHeight="46.0" prefWidth="268.0" text="Log in" textFill="#bdc3c7">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtFldUserName" labelFloat="true" layoutX="107.0" layoutY="204.0" onAction="#txtUserNameOnAction" prefHeight="56.0" prefWidth="641.0" promptText="User Name">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnIdCancel" buttonType="RAISED" layoutX="122.0" layoutY="402.0" onAction="#btnCancel" prefHeight="66.0" prefWidth="218.0" style="-fx-background-color: #0a3d62; -fx-background-radius: 20;" text="Cancel" textFill="#bdc3c7">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.26031746637253533">
+               <stops>
+                  <Stop color="#67a1d0" />
+                  <Stop color="#67a1d0" offset="0.007662835249042145" />
+                  <Stop color="#0f0898" offset="0.40868454661558107" />
+                  <Stop color="#7fb9f4" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="471.0" layoutY="398.0" onAction="#btnLog" prefHeight="62.0" prefWidth="216.0" style="-fx-background-color: #0a3d62; -fx-background-radius: 20;" text="Log In" textFill="#bdc3c7">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.26031746637253533">
+               <stops>
+                  <Stop color="#67a1d0" />
+                  <Stop color="#67a1d0" offset="0.007662835249042145" />
+                  <Stop color="#0f0898" offset="0.40868454661558107" />
+                  <Stop color="#7fb9f4" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="642.0" layoutY="469.0" opacity="0.61" prefHeight="37.0" prefWidth="189.0" text="Create By Hirushan">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="109.0" fitWidth="109.0" layoutX="336.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gallery/user%20-%20Copy.png" />
+         </image>
+      </ImageView>
+      <JFXPasswordField fx:id="txtFldPassword" labelFloat="true" layoutX="104.0" layoutY="288.0" prefHeight="55.0" prefWidth="645.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </JFXPasswordField>
+      <Label fx:id="lblAttempts" alignment="CENTER" layoutX="102.0" layoutY="358.0" prefHeight="32.0" prefWidth="650.0" text="Invalid Username or Password" textAlignment="CENTER" textFill="RED" textOverrun="CENTER_ELLIPSIS" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

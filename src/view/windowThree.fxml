@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="windowThreeForm" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.windowThreeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="58.0" layoutX="16.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="979.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#000046" />
+                  <Stop color="#1cb5e0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="31.0" layoutY="14.0" prefHeight="46.0" prefWidth="268.0" text="Parking System" textFill="#bdc3c7">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="122.0" prefHeight="40.0" prefWidth="161.0" text="In Park">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbInParkingAndOnDelivery" labelFloat="true" layoutX="179.0" layoutY="116.0" onAction="#cmbInParkingAndOnDeliveryOnAction" prefHeight="37.0" prefWidth="205.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton buttonType="RAISED" layoutX="436.0" layoutY="109.0" onAction="#btnAddVehicleOnAction" style="-fx-background-radius: 10; -fx-background-color: #2980b9;" text="Add Vehicle">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#4838c7" />
+                  <Stop color="#4838c7" offset="0.007662835249042145" />
+                  <Stop color="#1e5598" offset="0.44287764479730357" />
+                  <Stop color="#a379b3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="632.0" layoutY="107.0" onAction="#btnAddDriverOnAction" style="-fx-background-radius: 10; -fx-background-color: #2980b9;" text="Add Driver">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#4838c7" />
+                  <Stop color="#1e5598" offset="0.45246277205040086" />
+                  <Stop color="#a379b3" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnLogOutId" buttonType="RAISED" layoutX="840.0" layoutY="105.0" onAction="#btnLogOutOne" prefHeight="51.0" prefWidth="134.0" style="-fx-background-radius: 10; -fx-background-color: #778beb;" text="Log Out">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.44444443384806315">
+               <stops>
+                  <Stop color="#4838c7" />
+                  <Stop color="#1e5598" offset="0.45246277205040086" />
+                  <Stop color="#29186e" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="800.0" layoutY="563.0" opacity="0.61" prefHeight="37.0" prefWidth="189.0" text="Create By Hirushan">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="39.0" layoutY="219.0" prefHeight="318.0" prefWidth="922.0">
+         <children>
+            <TableView fx:id="tblInParkId" layoutX="1.0" prefHeight="318.0" prefWidth="922.0">
+               <columns>
+                  <TableColumn fx:id="tblVehicleNumber" prefWidth="160.8888702392578" text="Vehicle Number " />
+                  <TableColumn fx:id="tblVehicleType" minWidth="0.0" prefWidth="172.1111297607422" text="Vehicle Type" />
+                  <TableColumn fx:id="tblParkingSlot" minWidth="0.0" prefWidth="200.888916015625" text="Parking Slot" />
+                  <TableColumn fx:id="tblParkedTime" minWidth="0.0" prefWidth="388.33331298828125" text="Parked Time" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tblOnDeliveryId" layoutX="1.0" prefHeight="318.0" prefWidth="922.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="tblVehicleNumberTwoId" prefWidth="160.8888702392578" text="Vehicle Number " />
+                  <TableColumn fx:id="tblVehicleTypeTwoId" minWidth="0.0" prefWidth="172.1111297607422" text="Vehicle Type" />
+                  <TableColumn fx:id="tblParkingSlotId" minWidth="0.0" prefWidth="200.888916015625" text="Driver Name" />
+                  <TableColumn fx:id="tblParkedIdTimeId" minWidth="0.0" prefWidth="388.33331298828125" text="Left Time" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

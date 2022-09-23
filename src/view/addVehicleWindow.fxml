@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addVehicleWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="22.0" layoutY="21.0" stroke="BLACK" strokeType="INSIDE" width="606.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#000046" />
+                  <Stop color="#1cb5e0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="36.0" layoutY="20.0" prefHeight="46.0" prefWidth="181.0" text="Add Vehicle" textFill="#bdc3c7">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtVehicleNumberId" labelFloat="true" layoutX="23.0" layoutY="101.0" prefHeight="50.0" prefWidth="605.0" promptText="Vehicle Number">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMaximumWeightId" labelFloat="true" layoutX="17.0" layoutY="255.0" prefHeight="48.0" prefWidth="613.0" promptText="Maximum Weight ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbVehicleTypeId" layoutX="153.0" layoutY="171.0" onAction="#cmbVehicleTypeOnAction" prefHeight="45.0" prefWidth="474.0" />
+      <Label layoutX="21.0" layoutY="191.0" text="Vehicle Type">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNoOfPassengersId" labelFloat="true" layoutX="14.0" layoutY="330.0" prefHeight="51.0" prefWidth="622.0" promptText="No of Passengers">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddVehicleOneId" buttonType="RAISED" layoutX="442.0" layoutY="400.0" onAction="#btnAddVehicleOneOnAction" prefHeight="54.0" prefWidth="194.0" style="-fx-background-radius: 10; -fx-background-color: #2980b9;" text="Add Vehicle">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.30476189113798596">
+               <stops>
+                  <Stop color="#1317e2" />
+                  <Stop color="#418de0" offset="0.5228765914866164" />
+                  <Stop color="#123f5c" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="455.0" layoutY="462.0" opacity="0.61" prefHeight="37.0" prefWidth="189.0" text="Create By Hirushan">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

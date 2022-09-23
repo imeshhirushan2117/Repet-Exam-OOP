@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addDriverFormId" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addDriveWindowController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="44.0" layoutX="3.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="587.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#000046" />
+                  <Stop color="#1cb5e0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="14.0" layoutY="6.0" prefHeight="46.0" prefWidth="268.0" text="Add Driver" textFill="#bdc3c7">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAddDriverNameId" labelFloat="true" layoutX="37.0" layoutY="75.0" onAction="#texDriverNameOnAction" prefHeight="38.0" prefWidth="545.0" promptText="Driver Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddDriverLicenseNoId" labelFloat="true" layoutX="31.0" layoutY="191.0" prefHeight="38.0" prefWidth="541.0" promptText="Driving License No :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddDriverAddressId" labelFloat="true" layoutX="26.0" layoutY="255.0" prefHeight="38.0" prefWidth="541.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddDriverIdOne" buttonType="RAISED" layoutX="403.0" layoutY="323.0" onAction="#btnAddDriverIdOneOnAction" prefHeight="45.0" prefWidth="181.0" style="-fx-background-radius: 10; -fx-background-color: #2980b9;" text="Add Driver">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#a2b3e4" />
+                  <Stop color="#1760be" offset="0.4684994272623139" />
+                  <Stop color="#8307ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="410.0" layoutY="377.0" opacity="0.61" prefHeight="37.0" prefWidth="189.0" text="Create By Hirushan">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAddDriverNicId" labelFloat="true" layoutX="34.0" layoutY="132.0" prefHeight="38.0" prefWidth="545.0" promptText="Nic" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddDriverContactNoId" labelFloat="true" layoutX="26.0" layoutY="313.0" prefHeight="38.0" prefWidth="364.0" promptText="Contact No : ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>
