@@ -1,5 +1,6 @@
 package parkSystemPackge;
 
+//sub class
 public class Bus extends Vehicle{
 
     int[] reservedSlotsBus = {14};

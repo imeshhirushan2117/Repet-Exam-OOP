@@ -1,5 +1,6 @@
 package parkSystemPackge;
 
+//super clz
 abstract public class Vehicle {
     String vehicleNumber;
     String vehicleType;

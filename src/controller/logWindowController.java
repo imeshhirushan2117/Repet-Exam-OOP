@@ -31,7 +31,7 @@ public class logWindowController {
 
     public void btnLog(ActionEvent actionEvent) throws IOException {
 
-        if (txtFldPassword.getText().equals("") & txtFldUserName.getText().equals("")) {
+        if (txtFldPassword.getText().equals("1") & txtFldUserName.getText().equals("1")) {
             URL resource = getClass().getResource("../view/windowThree.fxml");
             Parent load = FXMLLoader.load(resource);
             Stage window = (Stage) btnIdCancel.getScene().getWindow();

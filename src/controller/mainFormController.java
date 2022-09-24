@@ -51,6 +51,7 @@ public class mainFormController {
 
     String[][] vehicle = {{"NA-3434", "Bus"}, {"KA-4563", "Van"}, {"58-3567", "Van"}, {"CCB-3568", "Van"}, {"GF-4358", "Van"}, {"CCB-3568", "Van"}, {"LM-6679", "Van"}, {"QA-3369", "Van"}, {"KB-3668", "Cargo Lorry"}, {"JJ-9878", "Cargo Lorry"}, {"GH-5772", "Cargo Lorry"}, {"XY-3536", "Cargo Lorry"}, {"YQ-3536", "Cargo Lorry"}, {"CBB-3566", "Cargo Lorry"}, {"QH-3444", "Cargo Lorry"}
     };
+    //compail time polomorpisam
     Van v1 = new Van();
     Bus b1 = new Bus();
     CargoLorry c1 = new CargoLorry();
@@ -86,7 +87,7 @@ public class mainFormController {
     }
 
 
-    public void btnOndDeliveryShift(ActionEvent actionEvent) throws IOException { //
+    public void btnOndDeliveryShift(ActionEvent actionEvent) throws IOException {
 
         v1.leavePark(numberOfVehicle, typeOfVehicle);
         b1.leavePark(numberOfVehicle, typeOfVehicle);

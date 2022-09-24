@@ -1,5 +1,6 @@
 package parkSystemPackge;
 
+//inharitun
 public class Van extends Vehicle{
 
     int[] reservedSlotsVan = {1, 2, 3, 4, 12, 13};
